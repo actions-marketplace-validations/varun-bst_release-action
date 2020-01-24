@@ -1,4 +1,4 @@
-name: 'Create Release'
+name: 'Create Release - local'
 description: 'Creates github releases'
 author: 'Nick Cipollo'
 inputs:
