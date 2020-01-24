@@ -22,6 +22,7 @@ export class GithubArtifactUploader implements ArtifactUploader {
                     artifact.readFile(),
                     artifact.name)
             } catch(error) {
+                core.warning(error.message)
                 const message = `Failed to upload artifact ${artifact.name}. Does it already exist?`
                 core.warning(message)
             }
